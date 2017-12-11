@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import "variables";
+
+.primary-color {
+    background: $primary-color;
+}
+
+.primary-color-text {
+    color: $primary-color;
+}
+
+.primary-color-light {
+    background: $primary-color-light;
+}
+
+.primary-color-dark {
+    background: $primary-color-dark;
+}
+
+.page-footer {
+    i,
+    .btn-flat {
+        color: #fff;
+    }
+}
+
+@import
+    "base",
+    "animate-bottom",
+    "materialize/materialize",
+    "font-awesome/font-awesome"
+;

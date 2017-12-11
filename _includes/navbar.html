@@ -1,0 +1,20 @@
+<div class="navbar-fixed">
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
+            <a class="button-collapse" data-activates="sidenav"><i class="fa fa-2x fa-navicon"></i></a>
+
+            <ul class="right hide-on-med-and-down">
+                {% include nav.html %}
+            </ul>
+        </div>
+
+        <div class="nav-content">
+            {% if page.layout == "page" %}
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light snipcart-checkout">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            {% endif %}
+        </div>
+    </nav>
+</div>
