@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: zinenda/zpm
+  branch: master
+
+media_folder: "img/uploads"
+
+collections:
+  - name: "restaurante"
+    label: "Restaurante"
+    folder: "_restaurante"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
+  - name: "pastelaria"
+    label: "Pastelaria"
+    folder: "_pastelaria"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
+  - name: "hotel"
+    label: "Hotel Residencial"
+    folder: "_hotel"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
+  - name: "diversos"
+    label: "Diversos"
+    folder: "_diversos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
+exclude:
+ - admin/index.js
+ - webpack.config.js
+ - package.json
+ - README.md
