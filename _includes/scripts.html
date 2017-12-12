@@ -1,6 +1,7 @@
 <script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/animsition.min.js"></script>
-<script src="/assets/js/materialize.min.js"></script>
 <script src="/assets/js/jquery.smoothState.min.js"></script>
-<script src="/assets/js/jquery.scrollme.min.js"></script>
-<script src="/assets/js/main.js"></script>
+{% if page.layout == "page" %}
+    <script src="/assets/js/materialize.min.js"></script>
+    <script src="/assets/js/jquery.scrollme.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+{% endif %}

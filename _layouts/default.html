@@ -6,6 +6,9 @@ layout: compress
 <html lang="pt">
     {% include head.html %}
     <body id="main">
+        {% if page.layout == "page" %}
+            {% include navbar.html %}
+        {% endif %}
         <main class="animate-bottom">
             {{ content }}
         </main>

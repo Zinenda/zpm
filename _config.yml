@@ -5,7 +5,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zambeze.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: imaz_3g
 github_username:  zinenda
-color: "#00bcd4"
 
 # Build settings
 markdown: kramdown
@@ -37,5 +36,5 @@ exclude:
   - yarn.lock
 
 sass:
-  sass_dir: _sass
+  sass_dir: assets/_sass
   style: compressed

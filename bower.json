@@ -24,7 +24,6 @@
     "materialize": "^0.100.2",
     "font-awesome": "^4.7.0",
     "scrollme": "^1.1.0",
-    "animsition": "^4.0.2",
     "smoothstate": "^0.7.2"
   }
 }

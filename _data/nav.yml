@@ -1,0 +1,29 @@
+- link: /restaurante
+  name: Restaurante
+  title: Restaurante & Pizzaria
+  icon: cutlery
+
+- link: /pastelaria
+  name: Pastelaria
+  title: Pastelaria & Catering
+  icon: birthday-cake
+
+- link: /hotel
+  name: Hotel
+  title: Hotel Residencial
+  icon: hotel
+
+- link: /diversos
+  name: Diversos
+  title: Mais Serviços
+  icon: folder
+
+- link: /explore
+  name: Explore
+  title: Veja Mais
+  icon: folder-open
+
+- link: /sobre
+  name: Sobre
+  title: Quem Somos
+  icon: info
