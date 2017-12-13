@@ -5,6 +5,7 @@ $( document ).ready(function(){
     $('.materialboxed').materialbox();
     $('.slider').slider();
     $('.scrollspy').scrollSpy();
+    $('.parallax').parallax();
     // smoothState.js
     $('#main').smoothState();
 });

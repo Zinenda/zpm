@@ -1,9 +1,16 @@
-<header class="parallax-container hide-on-small-only">
+<header class="parallax-container hide-on-small-only white-text" style="height: 50vh; text-shadow: 2px -2px #444;">
     <div class="parallax">
         <img src="{{ page.image }}" alt="{{ page.title }}">
     </div>
 
     <div class="container center">
         <h1>{{ page.title }}</h1>
+        <h3>
+            <ul>
+                {% for item in page.description %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </h3>
     </div>
 </header>
