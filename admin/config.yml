@@ -51,7 +51,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
 exclude:
- - admin/index.js
- - webpack.config.js
- - package.json
  - README.md

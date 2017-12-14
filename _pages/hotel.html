@@ -2,8 +2,23 @@
 title: Hotel Residencial
 description: 
     - Apartamentos
+    - Suits Standards
     - Suits Executivas
 image: /assets/img/header/pexels-photo-271619.jpeg
 layout: page
 ---
 
+{% for item in site.hotel %}
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="{{ item.image }}" alt="{{ item.title }}">
+        </div>
+        
+        <div class="col s12 l4">
+            <div class="container">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
