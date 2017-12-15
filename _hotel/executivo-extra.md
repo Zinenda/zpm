@@ -1,5 +1,5 @@
 ---
-title: Executivo Extra
+title: SUIT Executivo Extra
 description: >-
   A SUIT de mais alto nível que temos por oferecer, pelo preço mais acessível no
   mercado pela qualidade. Incluso Internet via Wi-Fi, TVCABO, Breakfast,

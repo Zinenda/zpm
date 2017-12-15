@@ -1,18 +1,20 @@
-<nav>
-    <div class="nav-wrapper">
-        <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
-        <a href="#" data-activates="sidenav" class="button-collapse show-on-large">
-            <i class="fa fa-2x fa-navicon"></i>
-        </a>
-
-        <ul class="right hide-on-med-and-down">
-            {% for item in site.data.contactos %}
-                <li>
-                    <a href="{{ item.contacto }}" title="{{ item.title }}"><i class="fa fa-{{ item.icon }}"></i> {{ item.contacto }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-</nav>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
+            <a href="#" data-activates="sidenav" class="button-collapse show-on-large">
+                <i class="fa fa-2x fa-navicon"></i>
+            </a>
+    
+            <ul class="right hide-on-med-and-down">
+                {% for item in site.data.contactos %}
+                    <li>
+                        <a href="{{ item.contacto }}" title="{{ item.title }}"><i class="fa fa-{{ item.icon }}"></i> {{ item.contacto }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>
 
 {% include sidenav.html %}

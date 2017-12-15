@@ -38,3 +38,9 @@ exclude:
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+collections:
+  hotel:
+  restaurante:
+  pastelaria:
+  diversos:

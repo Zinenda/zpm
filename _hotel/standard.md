@@ -1,5 +1,5 @@
 ---
-title: Standard
+title: SUIT Standard
 description: >-
   Temos duas opções de Suits Standards, a preços baixos com bônus inclusos nas
   SUITs executivas
