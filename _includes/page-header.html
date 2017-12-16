@@ -12,5 +12,11 @@
                 {% endfor %}
             </ul>
         </h3>
+
+        {% if page.title == "Hotel Residencial" %}
+            <a href="#booking" class="modal-trigger btn-large waves-effect waves-light">Reserve Já!</a>
+        {% endif %}
     </div>
 </header>
+
+{% include reservas.html %}
