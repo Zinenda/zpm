@@ -1,23 +1,44 @@
-<img src="{{ page.image }}" alt="" id="myVideo">
+<header class="slider" style="text-shadow: 2px -2px #444;">
+    <ul class="slides">
+        {% if page.title == "Diversos Serviços" %}
+            {% for item in site.diversos reversed limit: 4 %}
+                <li>
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                    <div class="caption center-align white-text">
+                        <h2>{{ item.title }}</h2>
+                    </div>
+                </li>
+            {% endfor %}
 
-<header class="header-content white-text center" style="text-shadow: 2px -2px #444;">
-    <div class="container">
-        <h1 class="italic"><a href="/" class="white-text">{{ site.title }}</a></h1>
-        <h2>{{ site.description }}</h2><hr>
-        <div class="content">
-            <div class="row icons">
-                {% for item in site.data.nav %}
-                    <a href="{{ item.link }}" title="{{ item.title }}" class="white-text">
-                        <div class="col s12 m4">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square-o fa-stack-2x"></i>
-                                <i class="fa fa-{{ item.icon }} fa-stack-1x"></i>
-                            </span>
-                            <h3>{{ item.name }}</h3>
+            {% elsif page.title == "Hotel Residencial" %}
+                {% for item in site.hotel reversed limit: 4 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                        <div class="caption center-align white-text">
+                            <h2>{{ item.title }}</h2>
                         </div>
-                    </a>
+                    </li>
                 {% endfor %}
-            </div>
-        </div>
-    </div>
+
+            {% elsif page.title == "Pastelaria" %}
+                {% for item in site.pastelaria reversed limit: 4 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                        <div class="caption center-align white-text">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+                    </li>
+                {% endfor %}
+
+            {% elsif page.title == "Restaurante" %}
+                {% for item in site.restaurante reversed limit: 4 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                        <div class="caption center-align white-text">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+                    </li>
+                {% endfor %}
+        {% endif %}
+    </ul>
 </header>

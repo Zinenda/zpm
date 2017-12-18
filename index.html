@@ -3,4 +3,26 @@ layout: default
 image: /assets/img/parallax/beach.jpeg
 ---
 
-{% include header.html %}
+<img src="{{ page.image }}" id="bg-index">
+
+<section class="section white-text center" style="text-shadow: 2px -2px #444;">
+    <div class="container">
+        <h1 class="italic"><a href="/" class="white-text">{{ site.title }}</a></h1>
+        <h2>{{ site.description }}</h2><hr>
+        <div class="content">
+            <div class="row icons">
+                {% for item in site.data.nav %}
+                    <a href="{{ item.link }}" title="{{ item.title }}" class="white-text">
+                        <div class="col s12 m4">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-{{ item.icon }} fa-stack-1x"></i>
+                            </span>
+                            <h3>{{ item.name }}</h3>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
