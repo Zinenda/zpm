@@ -12,6 +12,6 @@ layout: compress
         <main class="animate-bottom">
             {{ content }}
         </main>
-        {% include scripts.html %}
-    </body>
-</html>
+        {% if page.layout == "page" %}
+            {% include scripts.html %}
+        {% endif %}

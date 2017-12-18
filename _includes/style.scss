@@ -47,6 +47,10 @@
     height: 100%;
 }
 
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba($color: $primary-color, $alpha: .65)
+}
+
 @import
     "base",
     "animate-bottom",

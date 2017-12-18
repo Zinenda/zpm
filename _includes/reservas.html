@@ -19,6 +19,7 @@
                     </div>
 
                     <div class="input-field col s12 m4 ">
+                        <i class="fa fa-sort prefix"></i>
                         <select name="suits" class="icons">
                             <option value="" disabled selected>Escolha a SUIT</option>
                             {% for item in site.hotel %}
@@ -29,26 +30,26 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s3">
+                    <div class="input-field col s12 m3">
                         <i class="fa fa-male prefix"></i>
                         <input type="number" id="adults" name="Adultos" class="validate" placeholder="Número de Adultos">
                         <label for="adults">Adultos</label>
                     </div>
 
-                    <div class="input-field col s3">
+                    <div class="input-field col s12 m3">
                         <i class="fa fa-child prefix"></i>
                         <input type="number" id="child" name="Crianças" class="validate" placeholder="Número de Crianças">
                         <label for="child">Crianças</label>
                     </div>
 
-                    <div class="input-field col s3">
-                        <i class="fa fa-calendar prefix"></i>
+                    <div class="input-field col s12 m3">
+                        <i class="fa fa-calendar-check-o prefix"></i>
                         <input type="text" name="check-in" id="check-in" class="datepicker" placeholder="Check-In">
                         <label for="check-in">Check-In</label>
                     </div>
 
-                    <div class="input-field col s3">
-                        <i class="fa fa-calendar prefix"></i>
+                    <div class="input-field col s12 m3">
+                        <i class="fa fa-calendar-times-o prefix"></i>
                         <input type="text" name="check-out" id="check-out" class="datepicker" placeholder="Check-Out">
                         <label for="check-in">Check-Out</label>
                     </div>
@@ -57,7 +58,7 @@
 
                 <div class="row center">
                     <input type="submit" value="Reserve" class="btn-large waves-effect waves-light">
-                    <input type="reset" value="Apague" class="btn-large btn-flat waves-effect waves-light">
+                    <input type="reset" value="Corrija" class="btn-large btn-flat waves-effect waves-light">
                 </div>
             </form>
         </div>
