@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: zinenda/zpm
+  repo: Zinenda/zpm
   branch: master
+  site_domain: https://zpm.netlify.com 
 
 media_folder: "img/uploads"
 
@@ -49,6 +50,15 @@ collections:
       - {label: "Preço minimo", name: "price", widget: "number"}
       - {label: "Imagem Principal", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
+  - name: "explore"
+    label: "Explore"
+    folder: "_explore"
+    create: true
+    widget: "list"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagens", name: "images", widget: "image"}
 
 exclude:
  - README.md

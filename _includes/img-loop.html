@@ -1,0 +1,12 @@
+<div class="reveal">
+    <div class="fluidbox">
+        {% for image in site.explore %}
+            <a href="{{ image }}" class="fluidbox fluidbox__instance-[i] fluidbox--closed">
+                <div class="fluidbox__wrap" style="z-index: 990;">
+                    <img src="{{ image }}" alt="" class="fluidbox__thumb" style="opacity: 1;">
+                    <div class="fluidbox__ghost" style="width: [w]; height: [h]; top: [t]; left: [l];"></div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
