@@ -5,7 +5,7 @@ description: >-
   mercado pela qualidade. Incluso Internet via Wi-Fi, TVCABO, Breakfast,
   piscina, inclusive Ginásio
 price: '6500.00'
-image: /img/uploads/pexels-photo-271624(1).jpeg
+image: /img/uploads/18122017-img_9025-hdr.jpg
 layout: page
 ---
 
