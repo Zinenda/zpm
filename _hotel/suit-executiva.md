@@ -6,7 +6,7 @@ description: >-
   Executivas com todos bônus inclusos: Wi-Fi, TVCABO, Breakfast, Piscina e
   Ginásio
 price: '5500.00'
-image: /img/uploads/pexels-photo-271618.jpeg
+image: /img/uploads/18122017-img_9039-hdr.jpg
 layout: page
 ---
 
