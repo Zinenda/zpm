@@ -16,6 +16,10 @@ $( document ).ready(function(){
         closeOnSelect: false // Close upon selecting a date,
     });
     $('select').material_select();
-    //FluidBox
-    $(fluidbox).fluidbox();
+    var $container = $('#masonry-grid');
+    // initialize
+    $container.masonry({
+      columnWidth: '.col',
+      itemSelector: '.col',
+    });
 });

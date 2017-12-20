@@ -1,12 +1,9 @@
 <div class="reveal">
-    <div class="fluidbox">
+    <div id="masonry-grid" class="row">
         {% for image in site.explore %}
-            <a href="{{ image }}" class="fluidbox fluidbox__instance-[i] fluidbox--closed">
-                <div class="fluidbox__wrap" style="z-index: 990;">
-                    <img src="{{ image }}" alt="" class="fluidbox__thumb" style="opacity: 1;">
-                    <div class="fluidbox__ghost" style="width: [w]; height: [h]; top: [t]; left: [l];"></div>
-                </div>
-            </a>
+            <div class="col s6 l4">
+                <img src="{{ image }}" alt="{{ image.title }}" class="materialboxed" data-caption="{{ image.title }}">
+            </div>
         {% endfor %}
     </div>
 </div>
