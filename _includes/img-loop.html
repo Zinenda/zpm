@@ -2,7 +2,9 @@
     <div id="masonry-grid" class="row">
         {% for item in site.explore %}
             <div class="col s6 l4">
-                <img src="{{ item.images }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+                <a href="{{ item.images }}" title="{{ item.title }}" data-fresco-caption="{{ item.title }}" data-fresco-group="galleria" class="fresco">
+                    <img src="{{ item.images }}" alt="{{ item.title }}">
+                </a>
             </div>
         {% endfor %}
     </div>
