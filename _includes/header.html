@@ -39,6 +39,16 @@
                         </div>
                     </li>
                 {% endfor %}
+
+            {% elsif page.title == "Explore Mais" %}
+                {% for item in site.explore reversed limit: 4 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                        <div class="caption center-align white-text">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+                    </li>
+                {% endfor %}
         {% endif %}
     </ul>
 </header>
