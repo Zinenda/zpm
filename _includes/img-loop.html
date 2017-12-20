@@ -1,8 +1,8 @@
 <div class="reveal">
     <div id="masonry-grid" class="row">
-        {% for image in site.explore %}
+        {% for item in site.explore %}
             <div class="col s6 l4">
-                <img src="{{ image }}" alt="{{ image.title }}" class="materialboxed" data-caption="{{ image.title }}">
+                <img src="{{ item.images }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
             </div>
         {% endfor %}
     </div>
