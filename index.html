@@ -5,10 +5,12 @@ image: /img/uploads/18122017-img_9122.jpg
 
 <img src="{{ page.image }}" id="bg-index">
 
-<section class="section white-text center" style="text-shadow: 2px -2px #444;">
+<section class="section white-text center" style="text-shadow: 2px -2px #00bcd4;">
     <div class="container">
-        <h1 class="italic"><a href="/" class="white-text">{{ site.title }}</a></h1>
-        <h2>{{ site.description }}</h2><hr>
+        <a href="/">
+            <img src="/assets/img/header/zpm-web.png" alt="{{ site.title }}">
+        </a>
+        <hr><br>
         <div class="content">
             <div class="row icons">
                 {% for item in site.data.nav %}
