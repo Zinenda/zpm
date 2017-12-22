@@ -1,5 +1,5 @@
 ---
 title: Sala de Jantar
-images: /img/uploads/img_9203.jpg
+images: /img/uploads/img_9205.jpg
 ---
 
