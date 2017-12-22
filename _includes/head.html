@@ -13,9 +13,12 @@
     <link rel="manifest" href="/manifest.json">
 
     {% if page.layout == "page" %}
-        <script src="/assets/js/scrollreveal.min.js" async></script>
+        {% unless page.title == "Explore Mais" %}
+            <script src="/assets/js/scrollreveal.min.js" async></script>
+        {% endunless %}
     {% endif %}
     {% unless page.layout == "page" %}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
+        <!-- include the widget -->
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endunless %}
 </head>

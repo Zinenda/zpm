@@ -1,0 +1,16 @@
+{
+  "name": "Zambeze Paraiso Misterioso",
+  "short_name": "ZPM",
+  "description": "O Paraiso Misterioso",
+  "lang": "pt",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#009ed5",
+  "icons": [
+    {
+      "src": "/assets/img/favicons/apple-touch-icon.png",
+      "sizes": "160x160",
+      "type": "image/png"
+    }
+  ]
+}

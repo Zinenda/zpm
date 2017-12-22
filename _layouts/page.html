@@ -2,10 +2,12 @@
 layout: default
 ---
 
-{% include header.html %}
+{% unless page.title == "Explore Mais" %}
+    {% include header.html %}
+{% endunless %}
 {% include reservas.html %}
 <section class="section grey lighten-4">
-    <div class="container">
+    <div {% unless page.title == "Explore Mais" %}class="container"{% endunless %}>
         {{ content }}
     </div>
 </section>
