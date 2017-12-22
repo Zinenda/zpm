@@ -1,5 +1,5 @@
 ---
 title: Quarto principal
-images: /img/uploads/18122017-img_9025-hdr.jpg
+images: /img/uploads/img_9206.jpg
 ---
 
