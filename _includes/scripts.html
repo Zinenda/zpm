@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/assets/fresco/css/fresco/fresco.css">
 {% endif %}
 <script src="/assets/js/main.js"></script>
-<script>
-    window.sr = ScrollReveal();
-        sr.reveal('.reveal');
-</script>
+{% unless page.title == "Explore Mais" %}
+    <script>
+        window.sr = ScrollReveal();
+            sr.reveal('.reveal');
+    </script>
+{% endunless %}
