@@ -6,27 +6,12 @@ layout: compress
 <html lang="pt">
     {% include head.html %}
     <body id="main">
-        {% if page.layout == "page" %}
-            {% include navbar.html %}
-        {% endif %}
+        {% include navbar.html %}
+        
         <main class="animate-bottom">
             {{ content }}
         </main>
-        {% if page.layout == "page" %}
-            {% include footer.html %}
-            {% include scripts.html %}
-        {% endif %}
         
-        {% unless page.layout == "page" %}
-            <script>
-                if (window.netlifyIdentity) {
-                    window.netlifyIdentity.on("init", user => {
-                    if (!user) {
-                        window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                        });
-                    }
-                    });
-                }
-            </script>
-        {% endunless %}
+        {% include footer.html %}
+        
+        {% include scripts.html %}

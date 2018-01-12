@@ -1,29 +1,27 @@
+- link: /
+  title: Página Inicial
+  icon: home
+
 - link: /restaurante
-  name: Restaurante
-  title: Restaurante & Pizzaria
+  title: Restaurante
   icon: cutlery
 
 - link: /pastelaria
-  name: Pastelaria
-  title: Pastelaria & Catering
+  title: Pastelaria
   icon: birthday-cake
 
 - link: /hotel
-  name: Hotel
-  title: Hotel Residencial
+  title: Hotel
   icon: hotel
 
 - link: /diversos
-  name: Diversos
-  title: Mais Serviços
+  title: Diversos
   icon: folder
 
 - link: /explore
-  name: Explore
-  title: Veja Mais
+  title: Explore
   icon: folder-open
 
 - link: /sobre
-  name: Sobre
-  title: Quem Somos
+  title: Sobre
   icon: info

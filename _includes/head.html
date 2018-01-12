@@ -12,11 +12,10 @@
     <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
 
-    {% if page.layout == "page" %}
-        {% unless page.title == "Explore Mais" %}
-            <script src="/assets/js/scrollreveal.min.js" async></script>
-        {% endunless %}
-    {% endif %}
+    {% unless page.title == "Explore Mais" %}
+        <script src="/assets/js/scrollreveal.min.js" async></script>
+    {% endunless %}
+    
     {% unless page.layout == "page" %}
         <!-- include the widget -->
         <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
