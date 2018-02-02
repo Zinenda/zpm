@@ -23,6 +23,7 @@
   "dependencies": {
     "materialize": "^0.100.2",
     "font-awesome": "^4.7.0",
-    "scrollreveal": "^3.3.6"
+    "scrollreveal": "^3.3.6",
+    "jscroll": "^2.3.9"
   }
 }

@@ -2,12 +2,22 @@
 layout: default
 ---
 
-{% unless page.title == "Explore Mais" %}
+{% unless page.title == "Galeria" %}
     {% include header.html %}
 {% endunless %}
 {% include reservas.html %}
 <section class="section grey lighten-4">
-    <div {% unless page.title == "Explore Mais" %}class="container"{% endunless %}>
-        {{ content }}
+    <div {% unless page.title == "Galeria" %}class="container"{% endunless %} {% if page.title == "Galeria" %} id="masonry-grid" class="row"{% endif %}>
+        {% for item in paginator.posts %}
+            {% unless page.title == "Galeria" %}
+                {% include grid-loop.html %}
+            {% endunless %}
+
+            {% if page.title == "Galeria" %}
+                {% include img-loop.html %}
+            {% endif %}
+        {% endfor %}
+
+        {% include pagination.html %}
     </div>
 </section>

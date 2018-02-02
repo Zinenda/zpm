@@ -1,18 +1,7 @@
 ---
 title: Diversos Serviços
-description: 
-    - Cinema
-    - Escritórios
-    - Sala de Conferência
-image: /assets/img/header/pexels-photo-60217.jpeg
+pagination: 
+    enabled: true
+    collection: diversos
 layout: page
 ---
-
-{% for item in site.diversos %}
-    {% include grid-loop.html %}
-
-    {% else %}
-        <div class="center">
-            <h3>Sem Itens</h3>
-        </div>
-{% endfor %}

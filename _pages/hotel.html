@@ -1,18 +1,7 @@
 ---
 title: Hotel Residencial
-description: 
-    - Apartamentos
-    - Suits Standards
-    - Suits Executivas
-image: /assets/img/header/pexels-photo-271619.jpeg
+pagination: 
+    enabled: true
+    collection: hotel
 layout: page
 ---
-
-{% for item in site.hotel %}
-    {% include grid-loop.html %}
-
-    {% else %}
-        <div class="center">
-            <h3>Sem Itens</h3>
-        </div>
-{% endfor %}

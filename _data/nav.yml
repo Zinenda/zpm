@@ -18,9 +18,9 @@
   title: Diversos
   icon: folder
 
-- link: /explore
-  title: Explore
-  icon: folder-open
+- link: /galeria
+  title: Galeria
+  icon: image
 
 - link: /sobre
   title: Sobre

@@ -1,12 +1,12 @@
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/materialize.min.js"></script>
-{% if page.title == "Explore Mais" %}
-    <script src="/assets/js/masonry.pkgd.min.js"></script>
-    <script src="/assets/fresco/js/fresco/fresco.js"></script>
+<script defer src="/assets/js/jquery.min.js"></script>
+<script defer src="/assets/js/materialize.min.js"></script>
+{% if page.title == "Galeria" %}
+    <script defer src="/assets/js/masonry.pkgd.min.js"></script>
+    <script defer src="/assets/fresco/js/fresco/fresco.js"></script>
     <link rel="stylesheet" href="/assets/fresco/css/fresco/fresco.css">
 {% endif %}
-<script src="/assets/js/main.js"></script>
-{% unless page.title == "Explore Mais" %}
+<script defer src="/assets/js/main.js"></script>
+{% unless page.title == "Galeria" %}
     <script>
         window.sr = ScrollReveal();
             sr.reveal('.reveal');
