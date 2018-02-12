@@ -1,5 +1,5 @@
 ---
-title: hambúrger
+title: Hambúrger
 description: >-
   Um hambúrger bem gostoso e batatas crocaquetes, ufff... Que delicia! Na nossa
   pastelaria Maria Café, você poderá deliciar se do verdadeiro sabor de um

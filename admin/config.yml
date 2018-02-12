@@ -13,7 +13,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Preço minimo", name: "price", widget: "number" required: "false"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
@@ -24,7 +24,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Preço minimo", name: "price", widget: "number" required: "false"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
@@ -35,7 +35,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Preço minimo", name: "price", widget: "number" required: "false"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
@@ -46,7 +46,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number"}
+      - {label: "Preço minimo", name: "price", widget: "number" required: "false"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
