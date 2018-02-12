@@ -2,60 +2,57 @@ backend:
   name: git-gateway
   accept_roles:
     - admin
-    - editor
-  branch: master
-  site_domain: https://zpm.netlify.com 
 
-media_folder: "img/uploads"
+media_folder: "assets/img/uploads"
 
 collections:
   - name: "restaurante"
     label: "Restaurante"
-    folder: "_restaurante"
+    folder: "servicos/_restaurante"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
       - {label: "Preço minimo", name: "price", widget: "number"}
-      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
   - name: "pastelaria"
     label: "Pastelaria"
-    folder: "_pastelaria"
+    folder: "servicos/_pastelaria"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
       - {label: "Preço minimo", name: "price", widget: "number"}
-      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
   - name: "hotel"
     label: "Hotel Residencial"
-    folder: "_hotel"
+    folder: "servicos/_hotel"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
       - {label: "Preço minimo", name: "price", widget: "number"}
-      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
   - name: "diversos"
     label: "Diversos"
-    folder: "_diversos"
+    folder: "servicos/_diversos"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descrição", name: "description", widget: "string"}
       - {label: "Preço minimo", name: "price", widget: "number"}
-      - {label: "Imagem Principal", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
   - name: "explore"
     label: "Explore"
-    folder: "_explore"
+    folder: "servicos/_explore"
     create: true
     widget: "list"
     fields:
