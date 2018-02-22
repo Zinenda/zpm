@@ -1,18 +1,13 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="{{ site.color }}">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     {% seo %}
 
     {% include scssify.html %}
     
-    <link rel="shortcut icon" href="/assets/img/favicons/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json">
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
-    {% unless page.title == "Galeria" %}
-        <script src="/assets/js/scrollreveal.min.js" async></script>
-    {% endunless %}
+    <!-- netlify identity widget -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

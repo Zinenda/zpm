@@ -1,17 +1,23 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html lang="pt">
     {% include head.html %}
-    <body>
-        {% include navbar.html %}
-        
-        <main class="animate-bottom content">
-            {{ content }}
-        </main>
-        
-        {% include footer.html %}
-        
-        {% include scripts.html %}
+    <body class="is-loading">
+        <div id="wrapper" class="fade-in">
+            {% if page.layout == "page" %}
+                {% include intro.html %}
+            {% endif %}
+
+            {% include header.html %}
+
+            {% include navbar.html %}
+
+            <div id="main">
+                {{ content }}
+            </div>
+
+            {% include footer.html %}
+
+            {% include scripts.html %}
+        </div>
+    </body>
+</html>

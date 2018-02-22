@@ -1,0 +1,17 @@
+<section class="posts">
+    {% for post in paginator.posts %}
+        <article>
+            <header>
+                <span class="date">{{ post.date | date_to_string }}</span>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </header>
+            <a href="{{ post.url }}" class="image fit"><img src="{{ post.image }}" alt="{{ post.title }}"></a>
+            <p>{{ post.content | truncatewords: 50 }}</p>
+            <ul class="actions">
+                <li><a href="{{ post.url }}" class="button">Leia Mais</a></li>
+            </ul>
+        </article>
+    {% endfor %}
+</section>
+
+{% include pagination.html %}

@@ -2,62 +2,29 @@ backend:
   name: git-gateway
   accept_roles:
     - admin
+    - editor
+  branch: master 
 
 media_folder: "assets/img/uploads"
 
 collections:
-  - name: "restaurante"
-    label: "Restaurante"
-    folder: "servicos/_restaurante"
+  - label: "Posts"
+    name: "posts"
+    folder: _posts
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number", required: "false"}
+      - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-
-  - name: "pastelaria"
-    label: "Pastelaria"
-    folder: "servicos/_pastelaria"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number", required: "false"}
-      - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-
-  - name: "hotel"
-    label: "Hotel Residencial"
-    folder: "servicos/_hotel"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number", required: "false"}
-      - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-
-  - name: "diversos"
-    label: "Diversos"
-    folder: "servicos/_diversos"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "string"}
-      - {label: "Preço minimo", name: "price", widget: "number", required: "false"}
-      - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-
-  - name: "explore"
-    label: "Explore"
-    folder: "servicos/_explore"
-    create: true
-    widget: "list"
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagens", name: "images", widget: "image"}
-
-exclude:
- - README.md
+      - {label: "Youtube Trailer", name: "trailer", widget: "string"}
+      - label: "Categorias"
+        name: "category"
+        widget: "select"
+        options: ["Acção", "Animação", "Drama", "Ficção", "Suspence", "Terror"]
+      - label: "Autor"
+        name: "author"
+        widget: "select"
+        options: ["Zinenda", "Magagula", "Aniz"]
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Corpo", name: "body", widget: "markdown"}

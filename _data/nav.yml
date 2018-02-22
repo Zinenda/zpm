@@ -1,27 +1,20 @@
 - link: /
   title: Página Inicial
-  icon: home
 
-- link: /restaurante
-  title: Restaurante
-  icon: cutlery
+- link: /accao
+  title: Acção
 
-- link: /pastelaria
-  title: Pastelaria
-  icon: birthday-cake
+- link: /animacao
+  title: Animação
 
-- link: /hotel
-  title: Hotel
-  icon: hotel
+- link: /drama
+  title: Drama
 
-- link: /diversos
-  title: Diversos
-  icon: folder
+- link: /ficcao
+  title: Ficção
 
-- link: /galeria
-  title: Galeria
-  icon: image
+- link: /terror
+  title: Terror
 
-- link: /sobre
-  title: Sobre
-  icon: info
+- link: /suspence
+  title: Suspence

@@ -1,20 +1,9 @@
-<script defer src="/assets/js/jquery.min.js"></script>
-<!-- Compiled and minified JavaScript -->
-<script defer src="/assets/js/materialize.min.js"></script>
-{% if page.title == "Galeria" %}
-    <script defer src="/assets/js/masonry.pkgd.min.js"></script>
-    <script defer src="/assets/fresco/js/fresco/fresco.js"></script>
-    <link rel="stylesheet" href="/assets/fresco/css/fresco/fresco.css">
-{% endif %}
-<script defer src="/assets/js/main.js"></script>
-{% unless page.title == "Galeria" %}
-    <script>
-        window.sr = ScrollReveal();
-            sr.reveal('.reveal');
-    </script>
-{% endunless %}
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900">
 
-{% unless page.layout == "page" %}
-    <!-- include the widget -->
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
-{% endunless %}
+<script defer src="/assets/js/jquery.min.js"></script>
+<script defer src="/assets/js/jquery.scrollex.min.js"></script>
+<script defer src="/assets/js/jquery.scrolly.min.js"></script>
+<script defer src="/assets/js/skel.min.js"></script>
+<script defer src="/assets/js/util.js"></script>
+<script defer src="/assets/js/main.js"></script>

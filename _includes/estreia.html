@@ -1,0 +1,16 @@
+{% for post in site.posts limit: 1 %}
+    <article class="post featured">
+        <header class="major">
+            <span class="date">{{ post.date | date_to_string }}</span>
+            <h2><a href="{{ post.url }}" title="{{ post.title }}">Estreia da Semana</a></h2>
+        </header>
+
+        <div class="image fit">
+            <iframe src="https://www.youtube.com/embed/{{ post.trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <ul class="actions">
+            <li><a href="{{ post.url }}" class="button big">Leia a Sinopse</a></li>
+        </ul>
+    </article>
+{% endfor %}

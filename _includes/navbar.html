@@ -1,20 +1,10 @@
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo center" title="{{ site.title }}">{{ site.title }}</a>
-            <a href="#" data-activates="sidenav" class="button-collapse show-on-large">
-                <i class="fa fa-2x fa-navicon"></i>
-            </a>
-    
-            <ul class="right hide-on-med-and-down">
-                {% for item in site.data.contactos %}
-                    <li>
-                        <a href="{{ item.contacto }}" title="{{ item.title }}"><i class="fa fa-{{ item.icon }}"></i> {{ item.contacto }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </nav>
-</div>
-
-{% include sidenav.html %}
+<nav id="nav">
+    <ul class="links">
+        {% include nav.html %}
+    </ul>
+    <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+</nav>
