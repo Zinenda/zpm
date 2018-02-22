@@ -2,6 +2,6 @@
   title: Telefone Celular
   icon: mobile
 
-- contacto: info@paraisomisterioso.com
+- contacto: "mailto:info@paraisomisterioso.com"
   title: Email
   icon: envelope

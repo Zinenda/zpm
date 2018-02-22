@@ -2,6 +2,10 @@
   title: Página Inicial
   icon: home
 
+- link: /hotel
+  title: Hotel
+  icon: hotel
+
 - link: /restaurante
   title: Restaurante
   icon: cutlery
@@ -9,10 +13,6 @@
 - link: /pastelaria
   title: Pastelaria
   icon: birthday-cake
-
-- link: /hotel
-  title: Hotel
-  icon: hotel
 
 - link: /diversos
   title: Diversos
