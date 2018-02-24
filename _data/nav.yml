@@ -2,9 +2,17 @@
   title: Página Inicial
   icon: home
 
+- link: /sobre
+  title: Sobre
+  icon: info
+
 - link: /hotel
   title: Hotel
   icon: hotel
+
+- link: /
+  title: Cinema
+  icon: film
 
 - link: /restaurante
   title: Restaurante
@@ -21,7 +29,3 @@
 - link: /galeria
   title: Galeria
   icon: image
-
-- link: /sobre
-  title: Sobre
-  icon: info

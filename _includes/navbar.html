@@ -1,20 +1,25 @@
 <div class="navbar-fixed">
-    <nav>
+    <nav class="nav-extended">
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo center" title="{{ site.title }}">{{ site.title }}</a>
-            <a href="#" data-activates="sidenav" class="button-collapse show-on-large">
-                <i class="fa fa-2x fa-navicon"></i>
+            <a href="/" class="brand-logo" title="{{ site.title }}">{{ site.title }}</a>
+            <a data-activates="sideNav" class="button-collapse">
+                <i class="fas fa-bars"></i>
             </a>
-    
+
             <ul class="right hide-on-med-and-down">
-                {% for item in site.data.contactos %}
-                    <li>
-                        <a href="{{ item.contacto }}" title="{{ item.title }}"><i class="fa fa-{{ item.icon }}"></i> {{ item.contacto }}</a>
-                    </li>
-                {% endfor %}
+                {% include nav.html %}
             </ul>
+        </div>
+
+        <div class="nav-content">
+            <a 
+                href="#booking" 
+                class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger tooltipped"
+                data-position="bottom" 
+                data-delay="50"
+                data-tooltip="Booking">
+                <i class="fas fa-calendar-check"></i>
+                </a>
         </div>
     </nav>
 </div>
-
-{% include sidenav.html %}
