@@ -2,40 +2,29 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m4">
-                <h4>Serviços</h4>
-                <hr>
-                <ul>
-                    {% for item in site.collections reversed limit: 3 %}
-                        <li>{{ item.label | capitalize }}</li>
-                    {% endfor %}
-                </ul>
+                <h5>Conheça-nos</h5>
+
+                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam ullam error repudiandae libero cumque repellendus consectetur sapiente sint veritatis enim, blanditiis aspernatur quaerat dignissimos, quis fugiat quisquam maiores iusto.</p>
             </div>
 
             <div class="col s12 m4">
-                <h4>Localização</h4>
-                <hr>
-                Av. da Liberdade<br>
-                Tete - Moçambique<br>
-                <ul>
-                    {% for item in site.data.contactos %}
-                        <li>{{ item.contacto }}</li>
-                    {% endfor %}
-                </ul>
+                <h5>Localiza-nos</h5>
+                <p>Avenida da Liberdade</p>
+                <p>Cidade de Tete, Moçambique</p>
+                <p>Cel: +258 82 592 0320</p>
+                <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             </div>
 
             <div class="col s12 m4">
-                <h4>Extras</h4><hr>
-                <ul>
-                    {% for item in site.diversos %}
-                        <li>{{ item.title }}</li>
-                    {% endfor %}
-                </ul>
+                <h5>Contacte-nos</h5>
+                
             </div>
         </div>
     </div>
+
     <div class="footer-copyright">
         <div class="container center">
-            &copy;{{ site.time | date: "%Y" }} Todos Direitos Reservados | {{ site.title }} - {{ site.description }}
+            &copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos Direitos Reservados | Powered by <a href="https://izitag.github.io" title="IZItag">IZItag</a>
         </div>
     </div>
 </footer>
