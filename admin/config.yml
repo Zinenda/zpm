@@ -6,6 +6,14 @@ backend:
 media_folder: "assets/img/uploads"
 
 collections:
+  - name: "slider"
+    label: "Slider"
+    folder: "servicos/_slider"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - name: "restaurante"
     label: "Restaurante"
     folder: "servicos/_restaurante"
@@ -58,6 +66,3 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagens", name: "images", widget: "image"}
-
-exclude:
- - README.md
