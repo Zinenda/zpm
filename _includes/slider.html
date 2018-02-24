@@ -1,12 +1,37 @@
-<div class="slider">
-    <ul class="slides">
-        {% for item in site.slider limit: 4 %}
-            <li>
-                <img src="{{ item.image }}" alt="{{ item.title }}">
-                <div class="caption right-align">
-                    <h4>{{ item.title }}</h4>
-                </div>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+<header>
+    <div class="slider">
+        <ul class="slides">
+            {% for item in site.slider limit: 4 %}
+                <li>
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                    <div class="caption right-align">
+                        <h4>{{ item.title }}</h4>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="header-title">
+        <div class="container center">
+            <img src="{{ site.logo }}" alt="{{ site.title }}">
+            <p>Avenida da Liberdade</p>
+            <p>Cidade de Tete, Moçambique</p>
+            <p>Cel: +258 82 592 0320</p>
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+    </div>
+</header>
+
+<style>
+    header {
+        position: relative;
+    }
+
+    .header-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
