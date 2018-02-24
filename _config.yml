@@ -16,7 +16,9 @@ plugins:
   - 'jekyll-analytics'
 
 collections:
+  geral:
   hotel:
+  slider:
   galeria:
   diversos:
   pastelaria:

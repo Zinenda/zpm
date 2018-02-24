@@ -14,6 +14,16 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
 
+  - name: "geral"
+    label: "Geral"
+    folder: "servicos/_geral"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+
   - name: "restaurante"
     label: "Restaurante"
     folder: "servicos/_restaurante"

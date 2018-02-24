@@ -1,0 +1,23 @@
+<section class="section">
+    <div class="container">
+        <h3 class="center-align">Nossos  <strong>Serviços</strong></h3>
+
+        {% for item in site.geral %}
+            <section class="row">
+                <div class="reveal">
+                    <div class="hoverable primary-color-text" style="border: solid {{ site.color }} 1px; background-image: {{ item.image }};">
+                        <div class="col 12 l8">
+                            <div class="valign-wrapper">
+                                <h4 class="valign">{{ item.title }}</h4>
+                            </div>
+                        </div>
+
+                        <div class="col s12 l4 white">
+                            <p>{{ item.decription | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endfor %}
+    </div>
+</section>
