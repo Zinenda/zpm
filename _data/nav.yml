@@ -8,7 +8,7 @@
 
 - link: /hotel
   title: Hotel
-  icon: hotel
+  icon: bed
 
 - link: /
   title: Cinema
@@ -16,7 +16,7 @@
 
 - link: /restaurante
   title: Restaurante
-  icon: cutlery
+  icon: utensils
 
 - link: /pastelaria
   title: Pastelaria
