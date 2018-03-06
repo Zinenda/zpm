@@ -12,14 +12,16 @@
         </div>
 
         <div class="nav-content">
-            <a 
-                href="#booking" 
-                class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger tooltipped"
-                data-position="bottom" 
-                data-delay="50"
-                data-tooltip="Booking">
-                <i class="fas fa-calendar-check"></i>
+            {% if page.layout == "page" %}
+                <a 
+                    href="#booking" 
+                    class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger tooltipped"
+                    data-position="bottom" 
+                    data-delay="50"
+                    data-tooltip="Booking">
+                    <i class="fas fa-calendar-check"></i>
                 </a>
+            {% endif %}
         </div>
     </nav>
 </div>

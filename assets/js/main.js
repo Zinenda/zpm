@@ -2,6 +2,7 @@ $( document ).ready(function(){
     // materialize plugins
     $(".button-collapse").sideNav();
     $(".modal").modal();
+    $('select').material_select();
     $(".scrollspy").scrollSpy();
     $('.slider').slider();
     $('.datepicker').pickadate({

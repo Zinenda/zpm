@@ -1,31 +1,29 @@
-- link: /
-  title: Página Inicial
-  icon: home
-
-- link: /sobre
-  title: Sobre
-  icon: info
-
 - link: /hotel
   title: Hotel
   icon: bed
+  description: "Providenciamos 3 opções que se adequam às suas necessidades, entre Apartamentos à SUITs do mais alto nível"
 
-- link: /
+- link: https://cinema.netlify.com
   title: Cinema
   icon: film
+  description: "A primeira Sala de Cinema com tecnologia 3D na província, sendo também a primeira fora da capital do país"
 
 - link: /restaurante
   title: Restaurante
   icon: utensils
+  description: "Um dos maiores restaurantes da cidade, inclusive com uma ala VIP, servindo pratos deliciosos e exoticos, jus da cidade de Tete"
 
 - link: /pastelaria
   title: Pastelaria
   icon: birthday-cake
+  description: "Nossa Pastelaria Maria Café, onde oferecemos várias opções de cafés, além de termos Wi-FI free"
 
 - link: /diversos
   title: Diversos
   icon: folder
+  description: "Sala de Conferencias, Eventos, Live Shows, Billboards e Serviços Gráficos, alguns dos muitos serviços adicionais"
 
 - link: /galeria
   title: Galeria
   icon: image
+  description: "Aprecie nossa Galeria, e conheça mais de perto nosso estabelecimento"

@@ -3,11 +3,16 @@ layout: default
 ---
 
 {% unless page.title == "Galeria" %}
-    {% include header.html %}
+    {% include slider.html %}
 {% endunless %}
-{% include reservas.html %}
+
+{% include booking-modal.html %}
+
 <section class="section grey lighten-4">
-    <div {% unless page.title == "Galeria" %}class="container"{% endunless %} {% if page.title == "Galeria" %} id="masonry-grid" class="row"{% endif %}>
+    <div 
+        {% unless page.title == "Galeria" %}class="container"{% endunless %} 
+        {% if page.title == "Galeria" %} id="masonry-grid" class="row"{% endif %}>
+        
         {% unless page.title == "Galeria" %}
             {% for item in paginator.posts %}
                 {% include grid-loop.html %}
@@ -15,7 +20,7 @@ layout: default
         {% endunless %}
 
         {% if page.title == "Galeria" %}
-            {% for item in site.galeria %}
+            {% for item in paginator.posts %}
                 {% include img-loop.html %}
             {% endfor %}
         {% endif %}

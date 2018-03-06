@@ -1,23 +1,25 @@
-<section class="section reveal">
-    <div class="container">
-        <h3 class="center-align">Nossos  <strong>Serviços</strong></h3>
+<section class="section reveal primary-color-text">
+    <section class="container">
+        <section class="row">
+            <h3 class="center-align">Nossos <strong>Serviços</strong></h3>
+        </section>
 
-        {% for item in site.geral %}
-            <section class="row">
-                <div class="reveal">
-                    <div class="hoverable primary-color-text" style="border: solid {{ site.color }} 1px; background-image: {{ item.image }};">
-                        <div class="col 12 l8">
-                            <div class="valign-wrapper">
-                                <h4 class="valign">{{ item.title }}</h4>
-                            </div>
-                        </div>
-
-                        <div class="col s12 l4 white">
-                            <p>{{ item.decription | markdownify }}</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        {% endfor %}
-    </div>
+        <section class="row">
+            {% for item in site.data.nav %}
+                <article class="col s12 m6 l4 reveal">
+                    <h4 class="center-align">
+                        <a href="{{ item.link }}" class="primary-color-text">
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            <br>
+                            <strong>
+                                {{ item.title }}
+                            </strong>
+                        </a>
+                    </h4>
+    
+                    <p class="center-align">{{ item.description }}</p>
+                </article>
+            {% endfor %}
+        </section>
+    </section>
 </section>

@@ -11,20 +11,20 @@
                 <h5>Localiza-nos</h5>
                 <p>Avenida da Liberdade</p>
                 <p>Cidade de Tete, Moçambique</p>
-                <p>Cel: +258 82 592 0320</p>
-                <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                <p>Cel: <a href="tel:+258 82 592 0320" class="white-text">+258 82 592 0320</a></p>
+                <p>Email: <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a></p>
             </div>
 
             <div class="col s12 m4">
                 <h5>Contacte-nos</h5>
-                
+                {% include contact-form.html %}
             </div>
         </div>
     </div>
 
     <div class="footer-copyright">
         <div class="container center">
-            &copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos Direitos Reservados | Powered by <a href="https://izitag.github.io" title="IZItag">IZItag</a>
+            &copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos Direitos Reservados | Powered by <a href="https://izitag.github.io" class="white-text" title="IZItag">IZItag</a>
         </div>
     </div>
 </footer>
