@@ -1,25 +1,42 @@
-<section class="section reveal primary-color-text">
-    <section class="container">
-        <section class="row">
-            <h3 class="center-align">Nossos <strong>Serviços</strong></h3>
-        </section>
-
-        <section class="row">
-            {% for item in site.data.nav %}
-                <article class="col s12 m6 l4 reveal">
-                    <h4 class="center-align">
-                        <a href="{{ item.link }}" class="primary-color-text">
-                            <i class="fas fa-{{ item.icon }}"></i>
-                            <br>
-                            <strong>
-                                {{ item.title }}
-                            </strong>
-                        </a>
-                    </h4>
-    
-                    <p class="center-align">{{ item.description }}</p>
-                </article>
-            {% endfor %}
-        </section>
+<section class="section">
+    <section class="row">
+        {% for item in site.hotel limit: 3 %}
+            <div class="col s12 m4">
+                <div class="card-panel hoverable white-text center-on-small-only" style="background-color: {{ site.color }};">
+                    <h5>{{ item.title }}</h5>
+                    <div class="light">
+                        {{ item.description }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </section>
 </section>
+
+<div class="card hoverable">
+    <section class="section reveal primary-color-text">
+        <section class="container">
+            <section class="row">
+                <h3 class="center-align">Nossos <strong>Serviços</strong></h3>
+            </section>
+    
+            <section class="row">
+                {% for item in site.data.nav %}
+                    <article class="col s12 m6 l4 reveal">
+                        <h4 class="center-align">
+                            <a href="{{ item.link }}" class="primary-color-text">
+                                <i class="fas fa-{{ item.icon }}"></i>
+                                <br>
+                                <strong>
+                                    {{ item.title }}
+                                </strong>
+                            </a>
+                        </h4>
+        
+                        <p class="center-align">{{ item.description }}</p>
+                    </article>
+                {% endfor %}
+            </section>
+        </section>
+    </section>
+</div>
