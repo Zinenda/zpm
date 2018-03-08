@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
-  branch:
-    - master
-    - hotel-theme
+  branch: hotel-theme
   accept_roles:
     - admin
 
@@ -16,16 +14,6 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-
-  - name: "pacotes"
-    label: "Pacotes"
-    folder: "servicos/_pacotes"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Preço", name: "price", widget: "number"}
-      - {label: "Descrição", name: "description", widget: "text"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
 
   - name: "restaurante"
     label: "Restaurante"
