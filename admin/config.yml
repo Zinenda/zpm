@@ -7,6 +7,14 @@ backend:
 media_folder: "assets/img/uploads"
 
 collections:
+  - name: "sobre"
+    label: "Sobre"
+    folder: "servicos/_sobre"
+    create: true
+    fields: 
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "text"}
+
   - name: "slider"
     label: "Slider"
     folder: "servicos/_slider"

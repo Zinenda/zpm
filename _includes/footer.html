@@ -4,7 +4,9 @@
             <div class="col s12 m4">
                 <h5>Conheça-nos</h5>
 
-                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam ullam error repudiandae libero cumque repellendus consectetur sapiente sint veritatis enim, blanditiis aspernatur quaerat dignissimos, quis fugiat quisquam maiores iusto.</p>
+                {% for item in site.sobre limit: 1 %}
+                    <p class="justify">{{ item.description }}</p>
+                {% endfor %}
             </div>
 
             <div class="col s12 m4">
