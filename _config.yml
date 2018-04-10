@@ -17,6 +17,7 @@ plugins:
 
 collections:
   geral:
+  Sobre:
   hotel:
   slider:
   pacotes:
